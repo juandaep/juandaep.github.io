@@ -562,8 +562,8 @@ video {
   gap: 1.5rem;
   border-radius: 0.75rem;
   border-width: 1px;
-  border-color: rgb(255 255 255 / 0.5);
-  background-color: rgb(255 255 255 / 0.25);
+  border-color: rgb(255 255 255 / 0.25);
+  background-color: rgb(255 255 255 / 0.1);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1.5rem;
@@ -584,11 +584,8 @@ video {
   justify-content: center;
   gap: 0.5rem;
   border-radius: 0.5rem;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #f59e0b;
-  --tw-gradient-to: rgb(245 158 11 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #f97316;
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.75rem;
@@ -608,7 +605,7 @@ video {
   --tw-gradient-from: #f97316;
   --tw-gradient-to: rgb(249 115 22 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #f59e0b;
+  --tw-gradient-to: #fb923c;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -621,11 +618,8 @@ video {
   justify-content: center;
   gap: 0.5rem;
   border-radius: 0.5rem;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #22c55e;
-  --tw-gradient-to: rgb(34 197 94 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #16a34a;
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.75rem;
@@ -654,11 +648,10 @@ video {
 .btn-website {
   width: 100%;
   border-radius: 0.5rem;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #0f172a;
-  --tw-gradient-to: rgb(15 23 42 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #1f2937;
+  border-width: 1px;
+  border-color: rgb(255 255 255 / 0.25);
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.75rem;
@@ -675,10 +668,10 @@ video {
 
 .btn-website:hover {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #1f2937;
-  --tw-gradient-to: rgb(31 41 55 / 0);
+  --tw-gradient-from: #262626;
+  --tw-gradient-to: rgb(38 38 38 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #0f172a;
+  --tw-gradient-to: #171717;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -821,17 +814,9 @@ video {
   gap: 0.5rem;
 }
 
-.bg-\[url\(\'\/src\/img\/bg\.jpg\'\)\] {
-  background-image: url('/src/img/bg.jpg');
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.font-inter {
-  font-family: Inter;
 }
 
 .text-2xl {
@@ -855,6 +840,12 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+  font-family: Inter;
 }
 
 @media (min-width: 640px) {
